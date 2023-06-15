@@ -1,0 +1,19 @@
+﻿@page
+@model CakeShop.Pages.Forms.CustomCakeModel
+@{
+}
+
+<div class="container text-center">
+    <h1>Create Your Own Cake</h1>
+    <form method="POST">
+
+        <input type="text" placeholder="Enter cake name..."
+               asp-for="food.cakeName" /><br />
+
+        <input type="checkbox" placeholder="Vanila" asp-for="food.Vanila" />Vanila<br />
+        <input type="checkbox" placeholder="Chocolate" asp-for="food.Chocolate" />Chocolate<br />
+        <input type="checkbox" placeholder="Pineapple" asp-for="food.Pineapple" />Pineapple<br />
+
+        <button type="submit" class="btn btn-primary mt-1">Give me My Order</button>
+    </form>
+</div>
